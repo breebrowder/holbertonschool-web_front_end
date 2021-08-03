@@ -182,6 +182,22 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.card-testimonial {
+  text-align: center;
+}
+
+.card-testimonial .card-avatar {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-primary);
+}
+
 :root {
   --color-primary: #D73953;
   --color-black: #090909;
