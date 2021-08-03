@@ -84,4 +84,6 @@ html {
     box-sizing: border-box;
 }
 
-padding: 1rem 1.75rem;", "font-size: 1.25rem;", "color: #f8f9fa;", "border-color: #f8f9fa;", "display: inline-block;", "text-align: center;", "vertical-align: middle;", "user-select: none;", "background-color: transparent;", "border: 0.125rem solid transparent;", "border-radius: 0.5rem;
+// Incorporate explicit checker reqs below
+
+"padding: 1rem 1.75rem;", "font-size: 1.25rem;", "color: #f8f9fa;", "border-color: #f8f9fa;", "display: inline-block;", "text-align: center;", "vertical-align: middle;", "user-select: none;", "background-color: transparent;", "border: 0.125rem solid transparent;", "border-radius: 0.5rem;"
