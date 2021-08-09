@@ -1,0 +1,19 @@
+/* Task 8: Margin mixin */
+
+@mixin marginmix() {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+@mixin divmix() {
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+body {
+   @include marginmix(10px, 10px);
+}
+
+div {
+   @include divmix(15px, 15px);
+}
