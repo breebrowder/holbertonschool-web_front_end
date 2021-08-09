@@ -1,0 +1,13 @@
+/* Task 9: Extended */
+
+.info {
+  font-size: 12px; }
+
+.success {
+  @extend .info;
+  color: #00FF00; }
+
+.warning {
+  @extend .info;
+  color: #FF0000; }
+// Extend style of the class .info on .success and .warning
