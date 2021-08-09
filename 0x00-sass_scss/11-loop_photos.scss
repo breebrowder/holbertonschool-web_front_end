@@ -3,5 +3,8 @@
 @import "./11-photos";
 
 @each $name in $list-names {
-  background: image-#{$name}("photos/#{$name}.jpg") no-repeat; }
+    .photo-#{$name} {
+  background: image-url("photos/#{$name}.jpg") no-repeat;
+    }
+}
 // create a class for each name in the list and assign image based on name
