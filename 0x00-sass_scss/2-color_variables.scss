@@ -1,19 +1,19 @@
 /* Task 2: Colors */
 
 $rgb: #3D3D3D;
-$second_color: #6D6D6D
+$second_color: #6D6D6D;
 
 body {
-  color: #3D3D3D;
-  background-color: #6D6D6D;
+  color: $rgb;
+  background-color: $second_color;
 }
 
 p {
-  color: #3D3D3D;
+  color: $rgb;
 }
 
 h2 {
-  background-color: #6D6D6D;
+  background-color: $second_color;
 }
 
 // #3D3D3D is a combination of red, green and blue
