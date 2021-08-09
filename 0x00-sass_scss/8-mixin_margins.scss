@@ -1,13 +1,13 @@
 /* Task 8: Margin mixin */
 
-@mixin marginmix() {
-   margin-left: 10px;
-   margin-right: 10px;
+@mixin marginmix($left, $right) {
+   margin-left: $left;
+   margin-right: $right;
 }
 
-@mixin divmix() {
-   margin-left: 15px;
-   margin-right: 15px;
+@mixin divmix($left, $right) {
+   margin-left: $left;
+   margin-right: $right;
 }
 
 body {
