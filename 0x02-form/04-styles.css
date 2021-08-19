@@ -1,4 +1,4 @@
-/* SUMMARY
+B/* SUMMARY
     1. GLOBAL
     2. LAYOUT
     3. SECTION
@@ -685,8 +685,8 @@ label {
   padding: 0 0 0.5rem;
 }
 
-input[type="text"]
-input[type="email"]
+input[type="text"],
+input[type="email"],
 textarea {
   position: relative;
   width: 100%;
