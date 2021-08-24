@@ -191,10 +191,10 @@ a:active {
 
 .off-screen {
   left: -100vw;
-  postion: absolute;
+  position: absolute;
 }
 
-.skiplink {
+.skip-link {
   background: var(--color-black);
   color: var(--color-white);
   left: 0;
