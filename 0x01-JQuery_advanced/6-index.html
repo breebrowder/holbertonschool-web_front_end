@@ -30,15 +30,13 @@
             }
         }
 
-        function createForm() {
-            $("table").before('<input type="text"/><input type="text"/><select><option value="before">Before</option><option value="after">After</option><input type="submit">');
-            $("input").css({ "border": "none", "border": "2px solid #e0e2e4" });
-            $("select").css({ "border": "none", "border": "2px solid #e0e2e4", "border-radius": "5px", "font-weight": "bold" });
-            $("input:submit").css({ "border-radius": "5px", "border-color": "#e0e2e4", "font-weight": "bold" });
-            $("input:submit").click(function () {
-                let firstN = $("input").first().val();
-                let lastN = $("input:nth-of-type(2)").val();
-                addNewMember(firstN, lastN, ($("select").val()));
+	function createForm() {
+            $('table').before('<input type="text" id="first"/><input type="text" id="last"/><select><option value="before">Before</option><option value="after">After</option><input type="submit">')
+            $('input:submit').click(function () {
+                var input1 = $('input').first().val()
+                var input2 = $('input:nth-of-type(2)').val()
+                var selectVal = $('select').val()
+                addNewMember(input1, input2, selectVal)
             })
         }
         createFamilyTree();
