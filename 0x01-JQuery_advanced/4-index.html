@@ -4,18 +4,24 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Task 3</title>
+        <title>Task 4</title>
         <script type="application/javascript">
           function createFamilyTree() {
-	    $("body").append("<table>");
-	    $("body").append("<thead>");
-	    $("body").append("<tbody>");
+            $("body").append("<table>");
+            $("body").append("<thead>");
+            $("body").append("<tbody>");
             $("body").append("<tr>");
             $("thead tr").append($("<th>").text("Firstname"), $("<th>").text("Lastname"));
-	    $("tbody").append($("<tr>").append($("<td>").text("Guillame")), $("<tr>").append($("<td>").text("Paulette")), $("<tr>").append($("<td>").text("Antoine")));
+            $("tbody").append($("<tr>").append($("<td>").text("Guillame")), $("<tr>").append($("<td>").text("Paulette")), $("<tr>").append($("<td>").text("Antoine")));
             $("tbody tr").append($("<td>").text("Salva"));
-	  }
-	    createFamilyTree();
+          }
+	  function replaceFamilyTree() {
+
+            $("table").html("<table><tbody><tr><td>Gerard</td><td>Bonissa</td></tr></tbody></table>");
+
+            }
+            createFamilyTree();
+            replaceFamilyTree();
       </script>
     </head>
 
