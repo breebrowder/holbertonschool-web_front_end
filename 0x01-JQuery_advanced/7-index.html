@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <title>Task 7</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-crossorigin="anonymous"></script>
-	<script type="application/javascript">
+    <meta charset="utf-8" />
+    <title>Task 7</title>
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        function createSearchForm() {
+            let emptyInput = $("<input type='text'>");
+            let subInput = $("<input type='submit'>");
+            let emptyEl = $("<ul></ul>");
+
+            inputSubmit.click(function () {
+                let ValueofText = $("input").first().val();
+                queryWikipedia(ValueofText);
+            });
+
+            $("body").append(
+                emptyInput,
+                subInput,
+                emptyEl
+            );
+        }
 
 
-      </script>
-    </head>
+        function addNewArticle(id, title, snippet) {
+            let list = $('<li></li>')
+            let P1 = $('<p><span>id -</span><b>title</b>')
+            let P2 = $('<p>$(snippet)</p>')
+            $(list).append(P1, P2)
+            $('ul').append(list)
 
-    <body>
+        }
+
+        function queryWikipedia(search) {
 
 
-    </body>
+
+
+
+        }
+
+        createSearchForm()
+    </script>
+
+
+</body>
 
 </html>

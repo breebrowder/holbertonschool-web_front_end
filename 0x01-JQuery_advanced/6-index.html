@@ -33,10 +33,10 @@
 	function createForm() {
             $('table').before('<input type="text" id="first"/><input type="text" id="last"/><select><option value="before">Before</option><option value="after">After</option><input type="submit">')
             $('input:submit').click(function () {
-                var input1 = $('input').first().val()
-                var input2 = $('input:nth-of-type(2)').val()
-                var selectVal = $('select').val()
-                addNewMember(input1, input2, selectVal)
+                var firstInput = $('input').first().val()
+                var secondInput = $('input:nth-of-type(2)').val()
+                var value = $('select').val()
+                addNewMember(firstInput, secondInput, value)
             })
         }
         createFamilyTree();
