@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     function setCookies() {
-        let firstNameInput = document.getElementById("firstname").value;
+        let firstnameInput = document.getElementById("firstname").value;
         let emailInput = document.getElementById("email").value;
-        document.cookie = `firstname=${firstNameInput}`;
+        document.cookie = `firstname=${firstnameInput}`;
         document.cookie = `email=${emailInput}`;
     }
 
