@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="src/index.js"></script>
+    <script>
+    function setCookies() {
+        let firstnameInput = document.getElementById("firstname").value;
+        let emailInput = document.getElementById("email").value;
+        document.cookie = `firstname=${firstnameInput}`;
+        document.cookie = `email=${emailInput}`;
+    }
+
+    function showCookies() {
+        let theParagraph = document.createElement("p");
+        let allCookies = document.cookie;
+        newP.innerHTML = `Cookies: ${allCookies}`;
+        document.body.append(theParagraph);
+    };
+
+    </script>
+
 </head>
 
 <body>
