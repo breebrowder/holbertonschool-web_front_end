@@ -20,15 +20,23 @@
     <script>
 
         function setCookies() {
+            let date = new Date();
+            date.setTime(date.getTime() + (10 * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
             document.cookie = "firstname=" + document.getElementById('firstname').value;
             document.cookie = "email=" + document.getElementById('email').value;
+            document.cookie = expires;
         }
 
         function showCookies() {
             let theParagraph = document.createElement("p");
             let allofCookies = document.cookie;
-            theParagraph.innerHTML = "Cookies:" + document.cookie;
+            theParagraph.innerHTML = "Email: " + getCookie('email') + " - Firstname: " + getCookie('firstname');
             document.body.append(theParagraph);
+        }
+        function getCookie(name) {
+
+           <!-- Working on it -->
         }
         document.getElementById("login").onclick = setCookies;
         document.getElementById("show").onclick = showCookies;
