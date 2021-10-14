@@ -6,3 +6,6 @@
 * Your code should use the js extension
 * All of your code will be compiled/executed on Ubuntu 18.04 using Node 12.x and npm 6.x
 * src/index.js should stay empty - all your Javascript must be in your HTML, inside <script> tag
+
+
+NOTE: Practicing the Git Workflow with 2 branches; creating and merging pull requests.
