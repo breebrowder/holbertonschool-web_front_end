@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2</title>
+    <title>Task 3</title>
     <script src="src/index.js"></script>
 
 </head>
@@ -43,6 +43,43 @@
                 return cValue;
             } catch (error) {
                 return "";
+            }
+        }
+        function showForm() {
+            if (document.getElementById("welcome")) {
+                document.getElementById("welcome").remove();
+            }
+            document.getElementById("form").style.display = "block";
+        }
+
+
+        function hideForm() {
+            let theForm = document.getElementById("form");
+            theForm.style.display = "none";
+        }
+
+        function deleteCookiesAndShowForm() {
+            showForm();
+            document.cookie = "expires=Thu, 01 Jan 1970 00:00:00 GMT";
+
+        }
+
+        function showWelcomeMessageOrForm() {
+            let Firstname = getCookie("firstname");
+            if (document.cookie === '') {
+                showForm();
+            } else {
+                hideForm();
+                let heading1 = document.createElement("h1");
+                heading1.innerHTML = `Welcome: ${firstname}`;
+                heading1.setAttribute("id", "welcome");
+                let link = document.createElement("a");
+                link.innerHTML = " (logout)";
+                link.style.fontStyle = "italic";
+                link.setAttribute("onclick", "deleteCookiesAndShowForm()");
+                heading1.append(link);
+                document.body.append(heading1);
+
             }
         }
         document.getElementById("login").onclick = setCookies;
